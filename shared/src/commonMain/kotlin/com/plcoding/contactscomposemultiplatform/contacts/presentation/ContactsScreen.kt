@@ -27,7 +27,7 @@ import com.plcoding.contactscomposemultiplatform.contacts.presentation.component
 @Composable
 fun ContactsScreen(
     state: ContactsListsState,
-    newContact: ContactArgs,
+    newContact: ContactArgs?,
     onEvent: (ContactListEvent) -> Unit
 ) {
     Scaffold(
@@ -54,8 +54,8 @@ fun ContactsScreen(
                 Text(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(horizontal = 16.dp),
-                    text = "My contacts (${state.contactsSize}",
+                        .padding(horizontal = 12.dp),
+                    text = "My contacts (${state.contactsSize})",
                     fontWeight = FontWeight.Bold
                 )
             }

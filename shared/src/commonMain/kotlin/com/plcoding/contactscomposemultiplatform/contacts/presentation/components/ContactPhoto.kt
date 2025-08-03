@@ -45,7 +45,7 @@ fun ContactProfileImg(
                 modifier = Modifier.size(iconSize),
                 imageVector = Icons.Rounded.Person,
                 contentDescription = contact.firstName,
-                tint = MaterialTheme.colorScheme.secondaryContainer
+                tint = MaterialTheme.colorScheme.onSecondaryContainer
             )
         }
     }
